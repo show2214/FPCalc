@@ -41,7 +41,7 @@ namespace FPCalc
 
         private void PresentValueCoefficientButton_Clicked(object sender, EventArgs e)
         {
-            //TODO
+            Navigation.PushAsync(new PresentValueCoefficientCalc());
         }
 
         private void ClosingPriceCoefficientButton_Clicked(object sender, EventArgs e)
