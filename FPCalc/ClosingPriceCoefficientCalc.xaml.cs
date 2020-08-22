@@ -36,7 +36,7 @@ namespace FPCalc
             }
             double closingPriceCoefficient = Math.Pow(1.0 + annualInterestRate / 100, yearOfOperation);
             decimal result = Convert.ToInt64(principal * closingPriceCoefficient);
-            DisplayAlert("Result", "Result is " + result.ToString("C0"), "OK");
+            DisplayAlert("Result", "将来" + result.ToString("C0") + "になります", "OK");
         }
     }
 }

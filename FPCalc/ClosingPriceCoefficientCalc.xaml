@@ -5,8 +5,7 @@
     x:Class="FPCalc.ClosingPriceCoefficientCalc"
     Title="今のお金がどのくらいになるか"
     Visual="Material">
-    <StackLayout Padding="30"
-                 Margin="0, 30, 0, 0">
+    <StackLayout Padding="30">
         <Label Text="元金(円)"
                FontSize="Large"
                VerticalOptions="Center"
