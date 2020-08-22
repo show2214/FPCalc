@@ -36,7 +36,7 @@ namespace FPCalc
 
         private void CurrentPentionFactorButton_Clicked(object sender, EventArgs e)
         {
-            //TODO
+            Navigation.PushAsync(new CurrentPentionFactorCalc());
         }
 
         private void PresentValueCoefficientButton_Clicked(object sender, EventArgs e)
