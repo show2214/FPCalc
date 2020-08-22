@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FPCalc.ClosingPriceCoefficientCalc"
+    Title="今のお金がどのくらいになるか"
+    Visual="Material">
+    <StackLayout Padding="30"
+                 Margin="0, 30, 0, 0">
+        <Label Text="元金(円)"
+               FontSize="Large"
+               VerticalOptions="Center"
+               HorizontalOptions="StartAndExpand"/>
+        <Editor x:Name="Principal"
+                BackgroundColor="#C3C3C3"
+                Keyboard="Numeric"/>
+        <Label Text="年利率(%)"
+               FontSize="Large"
+               VerticalOptions="Center"
+               HorizontalOptions="StartAndExpand"/>
+        <Editor x:Name="AnnualInterestRate"
+                BackgroundColor="#C3C3C3"
+                Keyboard="Numeric"/>
+        <Label Text="運用年数(年)"
+               FontSize="Large"
+               VerticalOptions="Center"
+               HorizontalOptions="StartAndExpand"/>
+        <Editor x:Name="YearsOfOperation"
+                BackgroundColor="#C3C3C3"
+                Keyboard="Numeric"/>
+        <Button x:Name="CalcButton" Text="計算する"
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"/>
+    </StackLayout>
+</ContentPage>

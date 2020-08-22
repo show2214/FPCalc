@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FPCalc.SelectCalc"
+    Visual="Material">
+    <StackLayout>
+        <Button x:Name="ClosingPriceCoefficientButton"
+                Text="今のお金がどのくらいになるか"
+                Margin="30"
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"/>
+        <Button x:Name="PresentValueCoefficientButton"
+                Text="目標金額を達成するためにいくら必要か"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+        <Button x:Name="CurrentPentionFactorButton"
+                Text="一定期間一定額受け取るためにいくら必要か"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+        <Button x:Name="EndOfLifeCoefficientButton"
+                Text="積み立てた結果いくらになるか"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+        <Button x:Name="CapitalRecoveryFactorButton"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand">
+            <Button.Text>
+                元本を一定利率で運用しながら
+                取り崩すといくらになるか
+            </Button.Text>
+        </Button>
+        <Button x:Name="DebtReductionCoefficientButton"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand">
+            <Button.Text>
+                目標金額を達成するために
+                いくらずつ積み立てる必要があるか
+            </Button.Text>
+        </Button>
+    </StackLayout>
+</ContentPage>

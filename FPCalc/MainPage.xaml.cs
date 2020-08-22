@@ -16,6 +16,14 @@ namespace FPCalc
         public MainPage()
         {
             InitializeComponent();
+            NextButton.Clicked += NextButton_Clicked;
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
+
+        private void NextButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SelectCalc());
         }
     }
+
 }

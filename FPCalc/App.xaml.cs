@@ -9,8 +9,9 @@ namespace FPCalc
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            var page = new NavigationPage(new MainPage());
+            page.BarBackgroundColor = Color.LightGreen;
+            MainPage = page;
         }
 
         protected override void OnStart()
