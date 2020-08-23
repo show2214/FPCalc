@@ -31,7 +31,7 @@ namespace FPCalc
 
         private void EndOfLifeCoefficientButton_Clicked(object sender, EventArgs e)
         {
-            //TODO
+            Navigation.PushAsync(new EndOfLifeCoefficientCalc());
         }
 
         private void CurrentPentionFactorButton_Clicked(object sender, EventArgs e)

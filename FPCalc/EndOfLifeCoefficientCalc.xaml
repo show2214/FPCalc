@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FPCalc.EndOfLifeCoefficientCalc"
+    Title="積み立てた結果いくらになるか"
+    Visual="Material">
+    <StackLayout Padding="30">
+        <Label Text="積立額(円/年)"
+               FontSize="Large"
+               VerticalOptions="Center"
+               HorizontalOptions="StartAndExpand"/>
+        <Editor x:Name="Deposit"
+                BackgroundColor="#C3C3C3"
+                Keyboard="Numeric"/>
+        <Label Text="年利率(%)"
+               FontSize="Large"
+               VerticalOptions="Center"
+               HorizontalOptions="StartAndExpand"/>
+        <Editor x:Name="AnnualInterestRate"
+                BackgroundColor="#C3C3C3"
+                Keyboard="Numeric"/>
+        <Label Text="積立年数(年)"
+               FontSize="Large"
+               VerticalOptions="Center"
+               HorizontalOptions="StartAndExpand"/>
+        <Editor x:Name="AccumulatedYears"
+                BackgroundColor="#C3C3C3"
+                Keyboard="Numeric"/>
+        <Button x:Name="CalcButton" Text="計算する"
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"/>
+    </StackLayout>
+</ContentPage>
