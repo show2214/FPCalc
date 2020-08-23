@@ -21,7 +21,7 @@ namespace FPCalc
 
         private void DebtReductionCoefficientButton_Clicked(object sender, EventArgs e)
         {
-            //TODO
+            Navigation.PushAsync(new DebtReductionCoefficientCalc());
         }
 
         private void CapitalRecoveryFactorButton_Clicked(object sender, EventArgs e)
