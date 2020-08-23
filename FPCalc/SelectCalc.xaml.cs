@@ -26,7 +26,7 @@ namespace FPCalc
 
         private void CapitalRecoveryFactorButton_Clicked(object sender, EventArgs e)
         {
-            //TODO
+            Navigation.PushAsync(new CapitalRecoveryFactorCalc());
         }
 
         private void EndOfLifeCoefficientButton_Clicked(object sender, EventArgs e)
