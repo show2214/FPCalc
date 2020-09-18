@@ -2,41 +2,61 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FPCalc"
     x:Class="FPCalc.SelectCalc"
     Visual="Material">
-    <StackLayout>
-        <Button x:Name="ClosingPriceCoefficientButton"
-                Text="今のお金がどのくらいになるか"
-                Margin="30"
-                VerticalOptions="Center"
-                HorizontalOptions="CenterAndExpand"/>
-        <Button x:Name="PresentValueCoefficientButton"
-                Text="目標金額を達成するためにいくら必要か"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand"/>
-        <Button x:Name="CurrentPentionFactorButton"
-                Text="一定期間一定額受け取るためにいくら必要か"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand"/>
-        <Button x:Name="EndOfLifeCoefficientButton"
-                Text="積み立てた結果いくらになるか"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand"/>
-        <Button x:Name="CapitalRecoveryFactorButton"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand">
-            <Button.Text>
-                元本を一定利率で運用しながら
-                取り崩すといくらになるか
-            </Button.Text>
+    <Grid
+        RowSpacing="10"
+        Padding="10,20,10,10">
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Style TargetType="Button">
+                    <Setter
+                        Property="HorizontalOptions"
+                        Value="Fill"/>
+                    <Setter
+                        Property="VerticalOptions"
+                        Value="Fill"/>
+                    <Setter
+                        Property="BackgroundColor"
+                        Value="Aquamarine"/>
+                    <Setter
+                        Property="TextColor"
+                        Value="Black"/>
+                    <Setter
+                        Property="Margin"
+                        Value="20"/>
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <Button
+            x:Name="ClosingPriceCoefficientButton"
+            Text="今のお金を運用した結果いくらになるか">
         </Button>
-        <Button x:Name="DebtReductionCoefficientButton"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand">
-            <Button.Text>
-                目標金額を達成するために
-                いくらずつ積み立てる必要があるか
-            </Button.Text>
+        <Button
+            x:Name="PresentValueCoefficientButton"
+            Text="目標金額を達成するためにいくら必要か"
+            Grid.Row="1">
         </Button>
-    </StackLayout>
+        <Button
+            x:Name="CurrentPentionFactorButton"
+            Text="毎年一定額受け取るためにいくら必要か"
+            Grid.Row="2">
+        </Button>
+        <Button
+            x:Name="EndOfLifeCoefficientButton"
+            Text="積み立てた結果いくらになるか"
+            Grid.Row="3">
+        </Button>
+        <Button
+            x:Name="CapitalRecoveryFactorButton"
+            Text="運用しながら取り崩した時の毎年の受取額"
+            Grid.Row="4">
+        </Button>
+        <Button
+            x:Name="DebtReductionCoefficientButton"
+            Text="目標金額を達成するための積み立て額"
+            Grid.Row="5">
+        </Button>
+    </Grid>
 </ContentPage>
